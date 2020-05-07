@@ -1,0 +1,101 @@
+GET http://localhost:3000/api/courses/
+
+###
+GET http://localhost:3000/api/courses/1
+
+
+###
+GET http://localhost:3000/api/courses/10
+
+###
+
+POST http://localhost:3000/api/courses/
+Content-Type: application/json
+
+{
+    "name": "new course"
+}
+
+###
+
+GET http://localhost:3000/api/courses/
+
+###
+
+POST http://localhost:3000/api/courses/
+Content-Type: application/json
+
+{
+    "name": "co"
+}
+
+###
+GET http://localhost:3000/api/courses/
+
+###
+
+POST http://localhost:3000/api/courses/
+Content-Type: application/json
+
+{
+    "name": ""
+}
+
+###
+
+GET http://localhost:3000/api/courses/
+
+###
+
+PUT http://localhost:3000/api/courses/1
+Content-Type: application/json
+
+{
+    "name": "new-name"
+}
+
+###
+GET http://localhost:3000/api/courses/
+
+###
+
+PUT http://localhost:3000/api/courses/10
+Content-Type: application/json
+
+{
+    "name": "new-name"
+}
+
+###
+
+PUT http://localhost:3000/api/courses/1
+Content-Type: application/json
+
+{
+    "name": ""
+}
+
+###
+
+DELETE http://localhost:3000/api/courses/40
+
+
+###
+
+DELETE http://localhost:3000/api/courses/1
+
+###
+GET http://localhost:3000/api/courses/
+
+
+
+###
+//Built in middle ware : urlencoded
+POST http://localhost:3000/api/courses/
+Content-Type: application/x-www-form-urlencoded
+
+name=my-course
+
+###
+//serve static content
+GET http://localhost:3000/readme.txt

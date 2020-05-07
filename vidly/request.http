@@ -1,0 +1,54 @@
+GET http://localhost:3000/
+
+###
+GET http://localhost:3000/api/genres
+
+###
+GET http://localhost:3000/api/genres/2
+
+###
+GET http://localhost:3000/api/genres/20
+
+###
+POST http://localhost:3000/api/genres
+Content-Type: application/json
+
+{
+    "name":"Comedy"
+}
+
+###
+POST http://localhost:3000/api/genres
+Content-Type: application/json
+
+{
+    "name":"Fr"
+}
+
+###
+POST http://localhost:3000/api/genres
+Content-Type: application/json
+
+{
+    "name":""
+}
+
+###
+GET http://localhost:3000/api/genres
+
+###
+PUT http://localhost:3000/api/genres/1
+Content-Type: application/json
+
+{
+    "name":"Comedy"
+}
+
+###
+DELETE  http://localhost:3000/api/genres/1
+
+###
+DELETE  http://localhost:3000/api/genres/10
+
+###
+GET http://localhost:3000/api/genres
